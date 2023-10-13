@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form method="post" >
+            {% csrf_token %}
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" maxlength="255" required><br><br>
+            
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" maxlength="255" required><br><br>
+            
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label><br><br>
+            
+            <label for="date_of_birth">Date of Birth:</label>
+            <input type="date" id="date_of_birth" name="date_of_birth" required><br><br>
+            
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" maxlength="255" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="role">Role:</label><br>
+            <input type="radio" id="staff" name="role" value="Staff">
+            <label for="staff">Staff</label>
+            <input type="radio" id="student" name="role" value="Student">
+            <label for="student">Student</label><br><br>
+            
+            <!-- <label for="last_login">Last Login:</label>
+            <input type="datetime-local" id="last_login" name="last_login"><br><br> -->
+            
+            <label for="status">Status:</label>
+            <input type="text" id="status" name="status" maxlength="255" value="active"><br><br>
+            
+            <label for="otp">OTP:</label>
+            <input type="number" id="otp" name="otp" value="0"><br><br>
+            
+            <input type="submit" value="Register">
+        </form>
+
+
+</body>
+</html>
